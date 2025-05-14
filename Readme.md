@@ -58,3 +58,4 @@
 > 
 > npm install && npm run dev   # اگر از Mix یا Vite استفاده شده php
 > artisan serve
+</div>
