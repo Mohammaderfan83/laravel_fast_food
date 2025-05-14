@@ -58,4 +58,5 @@
 > 
 > npm install && npm run dev   # اگر از Mix یا Vite استفاده شده php
 > artisan serve
+> 📄 [نسخه دمو سایت]( https://mohammaderfan83.github.io/laravel_fast_food/)
 </div>
