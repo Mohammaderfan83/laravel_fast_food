@@ -1,13 +1,60 @@
-<div dir="rtl">
+<div dir="rtl" align="right">
 
-Hi! I'm your first Markdown file in **StackEdit**. If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening the **file explorer** on the left corner of the navigation bar.
+# 🍔 پروژه فروشگاه فست فود با Laravel
+
+این پروژه یک سیستم فروشگاهی برای یک فست‌فود است که با استفاده از فریم‌ورک Laravel پیاده‌سازی شده است. کاربران می‌توانند محصولات را مشاهده کنند، آن‌ها را به سبد خرید اضافه کنند، سفارش ثبت کنند و وضعیت ارسال را پیگیری نمایند.
+
+---
+
+## 🚀 ویژگی‌ها
+
+- مشاهده لیست محصولات
+- دسته‌بندی غذاها (پیتزا، برگر، نوشیدنی و ...)
+- جستجوی محصول
+- افزودن به سبد خرید
+- ثبت سفارش
+- تماس و ارتباط با ما
+- پیگیری وضعیت سفارش
+- احراز هویت کاربران
+- پنل مدیریت محصولات و سفارش‌ها
+
+---
+
+## 🛠️ تکنولوژی‌های استفاده شده
+
+- Laravel 11
+- PHP 8
+- MySQL
+- Bootstrap / Tailwind 
+- alpine.js و jQuery 
+- API برای پرداخت و ارسال پیامک ارسال
+
+---
+
+## 🧰 پیش‌نیازها
+
+برای اجرای این پروژه به ابزارهای زیر نیاز دارید:
+
+- PHP >= 8.1
+- Composer
+- MySQL
+- Node.js و NPM (برای assetها در صورت استفاده از Laravel Mix یا Vite)
+
+---
+
+## ⚙️ نصب و اجرا
+
+```bash
+git clone https://github.com/Mohammaderfan83/laravel_fast_food.git
 
 
-# فایل ها
+composer install
+cp .env.example .env
+php artisan key:generate
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+# تنظیمات دیتابیس را در فایل .env وارد کنید
 
-## Create files and folders
+php artisan migrate --seed
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
-</div>
+npm install && npm run dev   # اگر از Mix یا Vite استفاده شده
+php artisan serve
